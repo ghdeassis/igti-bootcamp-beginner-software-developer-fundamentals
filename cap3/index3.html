@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Eventos</title>
+        <meta charset="utf-8">
+        <script src="index3.js"></script>
+    </head>
+    <body>
+        <h1 id="h1" 
+            onclick="document.getElementById('h1').innerHTML = 'Obrigado'"
+            ondblclick="document.getElementById('h1').innerHTML = 'Clicou 2x'">
+            Clique aqui
+        </h1>
+        <h2 id="texto2"
+            onmouseover="document.getElementById('texto2').innerHTML = 'Mouse em cima'"
+            onmouseout="document.getElementById('texto2').innerHTML = 'Mouse fora'"
+        >
+            Texto 2
+        </h2>
+        <input type="text" 
+            onkeydown="console.log('onkeydown')"
+            onkeypress="console.log('onkeypress')"
+            onkeyup="console.log(this.value)"
+            onchange="inputOnChange(this.value)"
+            onblur="inputOnBlur()">
+    </body>
+</html>
